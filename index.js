@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
-require('dotenv').config({ path: './dead.env' });
+require('dotenv').config();  // Remove path as Vercel injects the environment variables automatically
 
 const app = express();
 const PORT = process.env.PORT || 5000;
