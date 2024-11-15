@@ -2,10 +2,9 @@
   "name": "salon-service-backend",
   "version": "1.0.0",
   "description": "Backend for salon service app",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
-    "start": "node index.js",
-    "build": "webpack --config webpack.config.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -16,14 +15,8 @@
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2"
   },
-  "devDependencies": {
-    "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4"
-  },
   "engines": {
     "node": ">=14.0.0"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC"
 }
