@@ -7,6 +7,16 @@ require('dotenv').config();  // Remove path as Vercel injects the environment va
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+const cors = require('cors');
+
+// Use CORS middleware
+app.use(cors({
+    origin: 'https://salon-service-app-622q-arnp8hyz2-dipayansaha007s-projects.vercel.app', // Replace with your frontend's URL
+    methods: 'GET,POST,PUT,DELETE', // Allow necessary HTTP methods
+    credentials: true, // If you're using cookies/session
+}));
+
+
 // Middleware
 app.use(cors());
 app.use(express.json());
