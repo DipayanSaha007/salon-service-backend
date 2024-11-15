@@ -11,7 +11,7 @@ const cors = require('cors');
 
 // Use CORS middleware
 app.use(cors({
-    origin: 'https://salon-service-app-622q-arnp8hyz2-dipayansaha007s-projects.vercel.app', // Replace with your frontend's URL
+    origin: 'https://salon-service-app-v4kb-2teace5il-dipayansaha007s-projects.vercel.app', // Replace with your frontend's URL
     methods: 'GET,POST,PUT,DELETE', // Allow necessary HTTP methods
     credentials: true, // If you're using cookies/session
 }));
